@@ -9,6 +9,7 @@ public class canBo {
      String tenCanBo;
      String phongBan;
      double tongLuong;
+     //class để chuyển tiền cho đẹp thôi chứ đ qtrong đâu .
     Locale locate= new Locale("vn","VN");
     NumberFormat nf= NumberFormat.getCurrencyInstance(locate);
 
@@ -52,15 +53,6 @@ public class canBo {
 
     public void setTongLuong(double tongLuong) {
         this.tongLuong = tongLuong;
-    }
-    public void input(){
-        Scanner sc= new Scanner(System.in);
-        System.out.println("họ tên cán bộ :  ");
-        tenCanBo=sc.nextLine();
-        System.out.println("phòng ban : ");
-        phongBan=sc.nextLine();
-        System.out.println("tổng lương ");
-        tongLuong=sc.nextDouble();
     }
     public void output(){
         System.out.println(maCanBo);

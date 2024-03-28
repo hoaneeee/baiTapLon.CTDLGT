@@ -1,11 +1,11 @@
-package baiTapLon;
+package baiTapLon2;
 
 import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
-        quanLiNhanSu ql= new quanLiNhanSu();
+        quanLiCanBo ql =new quanLiCanBo();
         int choice;
         do {
             System.out.println("-----Menu-----");
@@ -13,7 +13,7 @@ public class test {
             System.out.println("2. Thêm cán bộ vào danh sách");
             System.out.println("3. Liệt kê danh sách cán bộ");
             System.out.println("4. Thống kê số lượng cán bộ theo phòng ban");
-            System.out.println("5. In cán bộ có tổng lương >= 5000000");
+              System.out.println("5. In cán bộ có tổng lương >= 5000000");
             System.out.println("6. Tìm vị trí cán bộ theo mã số");
             System.out.println("7. Tìm kiếm cán bộ theo tên");
             System.out.println("8. Sắp xếp danh sách cán bộ theo tổng lương giảm dần");
@@ -22,16 +22,16 @@ public class test {
             choice = sc.nextInt();
             switch (choice){
                 case 1:
-                    ql. taoDanhSachCanBo();
+                    ql. taoDanhSach();
                     break;
                 case 2:
-                    ql.themCanBo();
+                    ql.addCanBo();
                     break;
                 case 3:
-                    ql.lietKeDanhSach();
+                    ql.lietkeDanhSach();
                     break;
                 case 4:
-                    ql.thongKeCanBo();
+                    ql.thongkeCacBan();
                     break;
                 case 5:
                     ql.luongLonHon1Jack();
@@ -44,7 +44,7 @@ public class test {
                     break;
                 case 8:
                     ql.sortLuongGiamDan();
-                    ql.lietKeDanhSach();
+                    ql.lietkeDanhSach();
                     break;
                 case 0:
                     System.out.println("Thoát chương trình.");
@@ -54,5 +54,7 @@ public class test {
                     break;
             }
         }while (choice!=0);
+
+
     }
 }
